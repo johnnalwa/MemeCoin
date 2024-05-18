@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "FloodCoin_backend": {
+      "main": "src/FloodCoin_backend/main.mo",
+      "type": "motoko"
+    },
+    "FloodCoin_frontend": {
+      "dependencies": [
+        "FloodCoin_backend"
+      ],
+      "source": [
+        "src/FloodCoin_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "FloodCoin_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
